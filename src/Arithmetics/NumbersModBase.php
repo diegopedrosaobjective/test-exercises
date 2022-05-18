@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Arithmetics;
+namespace Exercises\Arithmetics;
 
-abstract class BaseNumbersMod
+class NumbersModBase
 {
     /**
      * @param int $number

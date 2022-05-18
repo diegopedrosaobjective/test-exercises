@@ -32,18 +32,6 @@ class NumbersModTest extends TestCase {
         $this->assertFalse($result);
     }
 
-    public function testIfTheNumberIsDivisibleBySeven () {
-        $numberMod = new NumbersMod(7);
-        $result = $numberMod->isDivisibleBySeven();
-        $this->assertTrue($result);
-    }
-
-    public function testIfTheNumberIsNotDivisibleBySeven () {
-        $numberMod = new NumbersMod(1);
-        $result = $numberMod->isDivisibleBySeven();
-        $this->assertFalse($result);
-    }
-
     public function testIfTheNumberIsDivisibleByThreeOrFiveAndSeven () {
         $numberMod = new NumbersMod(70);
         $result = $numberMod->isDivisibleByThreeOrFiveAndSeven();

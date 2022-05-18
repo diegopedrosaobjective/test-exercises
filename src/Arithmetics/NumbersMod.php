@@ -2,7 +2,7 @@
 
 namespace Exercises\Arithmetics;
 
-class NumbersMod extends BaseNumbersMod
+class NumbersMod extends NumbersModBase
 {
     private int $number;
 
@@ -21,11 +21,6 @@ class NumbersMod extends BaseNumbersMod
         $divisibleByThree = $this->isDivisibleBy($this->number, 3);
         $divisibleByFive= $this->isDivisibleBy($this->number, 5);
         return $divisibleByThree || $divisibleByFive;
-    }
-
-    function isDivisibleBySeven(): bool {
-        $divisibleBySeven = $this->isDivisibleBy($this->number, 7);
-        return $divisibleBySeven;
     }
 
     function isDivisibleByThreeOrFiveAndSeven () {
