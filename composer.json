@@ -1,0 +1,26 @@
+{
+  "name": "diegopedrosaobjective/test-exercises",
+  "description": "A project to exercise TDD",
+  "keywords": ["php", "tdd", "exercises", "tests"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Diego Pedrosa",
+      "email": "diego.pedrosa@objective.com.br"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5",
+    "nunomaduro/collision": "^5.11",
+    "phpstan/phpstan": "^1.6",
+    "friendsofphp/php-cs-fixer": "^3.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "Exercises\\": "src/"
+    }
+  }
+}

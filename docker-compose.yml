@@ -1,0 +1,15 @@
+version: '3'
+services:
+  app:
+    image: webdevops/php-nginx-dev:7.4
+    container_name: test-exercises
+    working_dir: /var/www/app/
+    volumes:
+      - ./:/var/www/app
+    ports:
+      - 3000:80
+    environment:
+      - PHP_DATE_TIMEZONE=America/Fortaleza
+      - APPLICATION_PATH=/var/www/app
+      - WEB_DOCUMENT_ROOT=/var/www/app
+
