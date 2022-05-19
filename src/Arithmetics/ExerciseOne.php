@@ -4,9 +4,10 @@ namespace Exercises\Arithmetics;
 
 use Exercises\Arithmetics\NumbersMod;
 
-class ExerciseOne {
-
-    public function sumOfAllNumbersTillThousandDivisibleByThreeAndFive () : int {
+class ExerciseOne
+{
+    public function sumOfAllNumbersTillThousandDivisibleByThreeAndFive(): int
+    {
         $i = 0;
         $numbersArray = [];
 
@@ -18,7 +19,8 @@ class ExerciseOne {
         return array_sum($numbersArray);
     }
 
-    public function sumOfAllNumbersTillThousandDivisibleByThreeOrFive () : int {
+    public function sumOfAllNumbersTillThousandDivisibleByThreeOrFive(): int
+    {
         $i = 0;
         $numbersArray = [];
 
@@ -30,7 +32,8 @@ class ExerciseOne {
         return array_sum($numbersArray);
     }
 
-    public function sumOfAllNumbersTillThousandDivisibleByThreeOrFiveAndSeven () : int {
+    public function sumOfAllNumbersTillThousandDivisibleByThreeOrFiveAndSeven(): int
+    {
         $i = 0;
         $numbersArray = [];
 

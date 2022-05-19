@@ -14,31 +14,31 @@ class NumbersModTest extends TestCase {
         $this->assertTrue($result);
     }
 
-    public function testIfTheNumberIsNotDivisibleByThreeAndFive () {
+    public function testIfTheNumberIsNotDivisibleByThreeAndFive () : void {
         $numberMod = new NumbersMod(10);
         $result = $numberMod->isDivisibleByThreeAndFive();
         $this->assertFalse($result);
     }
 
-    public function testIfTheNumberIsDivisibleByThreeOrFive () {
+    public function testIfTheNumberIsDivisibleByThreeOrFive () : void {
         $numberMod = new NumbersMod(5);
         $result = $numberMod->isDivisibleByThreeOrFive();
         $this->assertTrue($result);
     }
 
-    public function testIfTheNumberIsNotDivisibleByThreeOrFive () {
+    public function testIfTheNumberIsNotDivisibleByThreeOrFive () : void {
         $numberMod = new NumbersMod(1);
         $result = $numberMod->isDivisibleByThreeOrFive();
         $this->assertFalse($result);
     }
 
-    public function testIfTheNumberIsDivisibleByThreeOrFiveAndSeven () {
+    public function testIfTheNumberIsDivisibleByThreeOrFiveAndSeven () : void {
         $numberMod = new NumbersMod(70);
         $result = $numberMod->isDivisibleByThreeOrFiveAndSeven();
         $this->assertTrue($result);
     }
 
-    public function testIfTheNumberIsNotDivisibleByThreeOrFiveAndSeven () {
+    public function testIfTheNumberIsNotDivisibleByThreeOrFiveAndSeven () : void {
         $numberMod = new NumbersMod(90);
         $result = $numberMod->isDivisibleByThreeOrFiveAndSeven();
         $this->assertFalse($result);

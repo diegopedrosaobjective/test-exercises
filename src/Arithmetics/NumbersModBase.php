@@ -9,7 +9,8 @@ class NumbersModBase
      * @param int $divisible
      * @return bool
      */
-    public function isDivisibleBy (int $number, int $divisible): bool {
+    public function isDivisibleBy(int $number, int $divisible): bool
+    {
         return $number % $divisible === 0;
     }
 }
