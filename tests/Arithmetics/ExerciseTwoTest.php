@@ -14,17 +14,17 @@ class ExerciseTwoTest extends TestCase
         $this->exerciseTwo = new ExerciseTwo();
     }
 
-    public function testIfNumberIsHappy () {
+    public function testIfNumberIsHappy () : void {
         $result = $this->exerciseTwo->isHappy(7);
         $this->assertTrue($result);
     }
 
-    public function testIfNumberIsNotHappy () {
+    public function testIfNumberIsNotHappy () : void {
         $result = $this->exerciseTwo->isHappy(2);
         $this->assertFalse($result);
     }
 
-    public function testNotNaturalNumber () {
+    public function testNotNaturalNumber () : void {
         $this->expectExceptionMessage("Por favor informe um número natural.");
         $result = $this->exerciseTwo->isHappy(-2);
     }
