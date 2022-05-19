@@ -25,7 +25,7 @@ class NumbersMod extends NumbersModBase
         return $divisibleByThree || $divisibleByFive;
     }
 
-    public function isDivisibleByThreeOrFiveAndSeven() : bool
+    public function isDivisibleByThreeOrFiveAndSeven(): bool
     {
         $divisibleByThree = $this->isDivisibleBy($this->number, 3);
         $divisibleByFive= $this->isDivisibleBy($this->number, 5);
