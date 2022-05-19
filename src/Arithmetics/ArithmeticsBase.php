@@ -2,7 +2,7 @@
 
 namespace Exercises\Arithmetics;
 
-class NumbersModBase
+class ArithmeticsBase
 {
     /**
      * @param int $number
@@ -12,5 +12,14 @@ class NumbersModBase
     public function isDivisibleBy(int $number, int $divisible): bool
     {
         return $number % $divisible === 0;
+    }
+
+    /**
+     * @param int $number
+     * @return bool
+     */
+    public function isNatural(int $number): bool
+    {
+        return $number >= 0;
     }
 }
