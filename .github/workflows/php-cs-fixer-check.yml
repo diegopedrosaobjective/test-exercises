@@ -1,6 +1,6 @@
 name: php-cs-fixer-check
 on:
-  pull_request: master
+  pull_request:
 
 jobs:
   sniff:
