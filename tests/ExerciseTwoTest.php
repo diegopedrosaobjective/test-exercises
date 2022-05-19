@@ -1,8 +1,8 @@
 <?php
 
-namespace Tests\Arithmetics;
+namespace Tests;
 
-use Exercises\Arithmetics\ExerciseTwo;
+use Exercises\ExerciseTwo;
 use PHPUnit\Framework\TestCase;
 
 class ExerciseTwoTest extends TestCase

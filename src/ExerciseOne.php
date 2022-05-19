@@ -1,6 +1,6 @@
 <?php
 
-namespace Exercises\Arithmetics;
+namespace Exercises;
 
 use Exercises\Arithmetics\NumbersMod;
 
