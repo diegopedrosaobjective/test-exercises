@@ -22,4 +22,6 @@ class ArithmeticsBase
     {
         return $number >= 0;
     }
+
+
 }
