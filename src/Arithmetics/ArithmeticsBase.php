@@ -23,5 +23,16 @@ class ArithmeticsBase
         return $number >= 0;
     }
 
-
+    /**
+     * @param int $number
+     * @return bool
+     */
+    public function isPrimeNumber (int $number) : bool {
+        for($i=2; $i<$number; $i++) {
+            if ($number % $i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }
