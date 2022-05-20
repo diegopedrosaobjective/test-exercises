@@ -2,7 +2,7 @@
 
 namespace Exercises\Arithmetics;
 
-class NumbersMod extends NumbersModBase
+class Arithmetics extends ArithmeticsBase
 {
     private int $number;
 

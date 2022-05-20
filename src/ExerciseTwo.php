@@ -1,10 +1,11 @@
 <?php
 
-namespace Exercises\Arithmetics;
+namespace Exercises;
 
 use Exception;
+use Exercises\Arithmetics\ArithmeticsBase;
 
-class ExerciseTwo
+class ExerciseTwo extends ArithmeticsBase
 {
     /**
      * @var array<int>
@@ -39,10 +40,5 @@ class ExerciseTwo
             $this->numbersArray[] = $number;
             return $this->isHappy($sum);
         }
-    }
-
-    public function isNatural(int $number): bool
-    {
-        return (is_int($number) && $number >= 0);
     }
 }

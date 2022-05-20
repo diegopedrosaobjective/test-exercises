@@ -1,9 +1,8 @@
 <?php
 
-namespace Tests\Arithmetics;
+namespace Tests;
 
-use Exercises\Arithmetics\ExerciseOne;
-use Exercises\Arithmetics\NumbersMod;
+use Exercises\ExerciseOne;
 use PHPUnit\Framework\TestCase;
 
 class ExerciseOneTest extends TestCase {

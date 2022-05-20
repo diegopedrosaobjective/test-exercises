@@ -1,8 +1,8 @@
 <?php
 
-namespace Exercises\Arithmetics;
+namespace Exercises;
 
-use Exercises\Arithmetics\NumbersMod;
+use Exercises\Arithmetics\Arithmetics;
 
 class ExerciseOne
 {
@@ -12,7 +12,7 @@ class ExerciseOne
         $numbersArray = [];
 
         for ($i; $i < 1000; $i++) {
-            $divisibleBy = new NumbersMod($i);
+            $divisibleBy = new Arithmetics($i);
             $numbersArray[] = $divisibleBy->isDivisibleByThreeAndFive() ? $i : 0 ;
         }
 
@@ -25,7 +25,7 @@ class ExerciseOne
         $numbersArray = [];
 
         for ($i; $i < 1000; $i++) {
-            $divisibleBy = new NumbersMod($i);
+            $divisibleBy = new Arithmetics($i);
             $numbersArray[] = $divisibleBy->isDivisibleByThreeOrFive() ? $i : 0 ;
         }
 
@@ -38,7 +38,7 @@ class ExerciseOne
         $numbersArray = [];
 
         for ($i; $i < 1000; $i++) {
-            $divisibleBy = new NumbersMod($i);
+            $divisibleBy = new Arithmetics($i);
             $numbersArray[] = $divisibleBy->isDivisibleByThreeOrFiveAndSeven() ? $i : 0 ;
         }
 
