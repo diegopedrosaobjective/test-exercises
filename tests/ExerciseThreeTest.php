@@ -20,8 +20,8 @@ class ExerciseThreeTest extends TestCase
     }
 
     public function testIfTheSumOfTheWordIsCorrect () : void {
-        $result = $this->exercise3->wordSum("Amor");
-        $this->assertEquals(73, $result);
+        $result = $this->exercise3->wordSum("João");
+        $this->assertEquals(67, $result);
     }
 
     public function testIfTheSumOfTheWordIsHappy () : void {
