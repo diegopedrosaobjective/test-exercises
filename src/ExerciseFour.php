@@ -19,7 +19,7 @@ class ExerciseFour implements ExerciseFour\IExerciseFour
 
     public function isFreeShipping() : bool
     {
-        $this->cart->getTotalCartValue() <= self::FREE_SHIPPING_LIMIT_VALUE;
+        return $this->cart->getTotalCartValue() <= self::FREE_SHIPPING_LIMIT_VALUE;
     }
 
     public function getTotalValue() : float
