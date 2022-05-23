@@ -2,15 +2,15 @@
 
 namespace Exercises\Cart;
 
-use Exercises\Product\Product;
+use Exercises\Product\IProduct;
 use Exercises\User\User;
 
 class Cart implements ICart
 {
     /**
-     * @var array <Product>
+     * @var array <IProduct>
      */
-    private array $products;
+    private array $products = [];
     private User $user;
 
     public function __construct(User $user)
@@ -27,19 +27,20 @@ class Cart implements ICart
     }
 
     /**
-     * @param Product $product
+     * @param IProduct $product
      * @return bool
      */
-    public function addProduct(Product $product): bool
+    public function addProduct(IProduct $product): bool
     {
         $this->products[] = $product;
+        return true;
     }
 
     /**
-     * @param Product $product
+     * @param IProduct $product
      * @return bool
      */
-    public function removeProduct(Product $product): bool
+    public function removeProduct(IProduct $product): bool
     {
         $productIndex = array_search($product, $this->products);
         if ($productIndex !== false) {
@@ -49,10 +50,10 @@ class Cart implements ICart
     }
 
     /**
-     * @param Product $product
+     * @param IProduct $product
      * @return bool
      */
-    public function updateProduct(Product $product): bool
+    public function updateProduct(IProduct $product): bool
     {
         if ($product->getQuantity() === 0) {
             return $this->removeProduct($product);
@@ -68,7 +69,7 @@ class Cart implements ICart
     }
 
     /**
-     * @inheritDoc
+     * return @var array <int, IProduct>
      */
     public function getProducts(): array
     {
