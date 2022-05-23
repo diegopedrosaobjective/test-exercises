@@ -44,7 +44,7 @@ class Cart implements ICart
     {
         $productIndex = array_search($product, $this->products);
         if ($productIndex !== false) {
-            array_splice($this->products, $productIndex);
+            array_splice($this->products, (int)$productIndex);
         }
         return true;
     }

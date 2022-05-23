@@ -13,11 +13,13 @@ class User implements IUser
         $this->cep = $cep;
     }
 
-    public function getName () : string {
+    public function getName(): string
+    {
         return $this->name;
     }
 
-    public function getCep () : string {
+    public function getCep(): string
+    {
         return $this->cep;
     }
 }
